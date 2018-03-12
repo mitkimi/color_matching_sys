@@ -1,8 +1,8 @@
 <template>
   <el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="6" style="margin-bottom:16px;">
     <el-card style="width:100%">
-      <div slot="header" class="clearfix">
-        {{ color_name }}
+      <div slot="header" class="clearfix box">
+        [{{id}}] {{ color_name }}
       </div>
       <div>
         <div class='ball' ref="ball"></div>
