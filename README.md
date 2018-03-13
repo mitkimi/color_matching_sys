@@ -1,17 +1,24 @@
-# cmss.ipietech.net
+# ipietech设计系统
 
 > A Vue.js project
 
-## Build Setup
+## 开发计划
+
+> 第一阶段【完成】 调色板展示功能
+> 第二阶段【进行】 存取数据库进行调色板展示
+> 第三阶段【等待】 完整化设计系统，使用ipietech通行证登录
+> 第四阶段【等待】 更多设计相关工具的写入
+
+## 开发者安装
 
 ``` bash
-# install dependencies
+# 安装依赖包
 npm install
 
-# serve with hot reload at localhost:8080
+# 服务器热更新，访问：localhost:8080
 npm run dev
 
-# build for production with minification
+# 使用minification构建生产环境
 npm run build
 
 # build for production and view the bundle analyzer report
