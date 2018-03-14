@@ -24,7 +24,7 @@ export default {
       colors: [
         {
           id: 1,
-          name: 'Un-named Color',
+          name: 'Depth Sea',
           colors: ['#30cfd0', '#330867'],
         },
         {
@@ -50,7 +50,7 @@ export default {
         {
           id: 6,
           name: 'Arielles Smlie',
-          colors: ['#000000', '#000000'],
+          colors: ['#19d9e4', '#3ac7d9'],
         },
         {
           id: 7,
@@ -59,8 +59,8 @@ export default {
         },
         {
           id: 8,
-          name: 'Un-named Color',
-          colors: ['#a4fc79', '#96e6a1'],
+          name: 'Kaffic Lime',
+          colors: ['#d4fc79', '#96e6a1'],
         },
         {
           id: 9,
@@ -89,7 +89,7 @@ export default {
         },
         {
           id: 14,
-          name: 'Un-named Color',
+          name: 'Green Apple',
           colors: ['#a4fc79', '#96e6a1'],
         },
         {
@@ -124,7 +124,7 @@ export default {
         },
         {
           id: 21,
-          name: 'Un-named Color',
+          name: 'Gray Sky',
           colors: ['#fdfbfb', '#ebedee'],
         },
         {
@@ -160,12 +160,12 @@ export default {
         {
           id: 28,
           name: 'Old Hat',
-          colors: ['#000000', '#000000'],
+          colors: ['#e2e58b', '#7eddd9'],
         },
         {
           id: 29,
           name: 'Star Wine',
-          colors: ['#000000', '#000000'],
+          colors: ['#b965d7', '#ef619d'],
         },
         {
           id: 30,
@@ -195,7 +195,7 @@ export default {
         {
           id: 35,
           name: 'Young Passion',
-          colors: ['#000000', '#000000'],
+          colors: ['#ff867b', '#b3295a'],
         },
         {
           id: 36,
@@ -205,7 +205,7 @@ export default {
         {
           id: 37,
           name: 'Un-named Color',
-          colors: ['#000000', '#000000'],
+          colors: ['#e5e4e0', '#cfcac4'],
         },
         {
           id: 38,
@@ -225,12 +225,12 @@ export default {
         {
           id: 41,
           name: 'Shy Rainbow',
-          colors: ['#000000', '#000000'],
+          colors: ['#90afdd', '#7fc3da'],
         },
         {
           id: 42,
           name: 'Loon Crest',
-          colors: ['#a4fc79', '#96e6a1'],
+          colors: ['#959595', '#606060'],
         },
         {
           id: 43,
@@ -255,7 +255,7 @@ export default {
         {
           id: 47,
           name: 'Sharpeye Eagle',
-          colors: ['#9890e3', '#b14f4cf'],
+          colors: ['#9890e3', '#b1f4cf'],
         },
         {
           id: 48,
