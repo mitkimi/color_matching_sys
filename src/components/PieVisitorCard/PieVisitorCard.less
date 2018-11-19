@@ -1,0 +1,103 @@
+.visitor {
+  .name {
+    font-size: 24px;
+    color: #452704;
+    span {
+      margin-left: 20px;
+      font-size: 14px;
+      line-height: 24px;
+      height: 24px;
+      width: 24px;
+      background: #333333;
+      color: #ffffff;
+      display: inline-block;
+      border-radius: 50%;
+      text-align:center;
+    }
+    .male {
+      background: #409EFF;
+    }
+    .female {
+      background: #fe6c6f;
+    }
+  }
+  .phone {
+    margin-top: 10px;
+  }
+  .respondent {
+    margin-top: 10px;
+    color: #666666;
+    cursor: pointer;
+  }
+  .info {
+    margin-top: 10px;
+    color: #666666;
+  }
+  .dialog-respondent {
+    position: relative;
+    .id {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .qrcode {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      width: 120px;
+      height: 120px;
+    }
+    .user {
+      display: flex;
+      flex-direction: row;
+      .avatar {
+        width: 40px;
+        height: 40px;
+        background: #cccccc;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .avatar-default {
+        width: 40px;
+        height: 40px;
+        background: #cccccc;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+      .name {
+        line-height: 40px;
+        margin-left: 20px;
+      }
+    }
+    
+    .phone {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    .job {
+      
+    }
+    .belong {
+      
+    }
+  }
+}
+
+.el-card {
+  background: #ffffff;
+  transition: all, 0.5s;
+  &:hover {
+    background: #efeff3;
+  }
+}

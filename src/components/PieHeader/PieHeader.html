@@ -1,0 +1,9 @@
+<div id="pie-header">
+  <div class="logo-container">
+    <logo />
+  </div>
+  <div class="info-container">
+    <pie-header-info-card v-for="item,index in cards" :key="index" :data="item" />
+    <signature-card style="margin-left: 10px;margin-right: 20px;"/>
+  </div>
+</div>

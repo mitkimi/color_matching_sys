@@ -1,0 +1,15 @@
+<div id="signature-card">
+  <el-dropdown>
+    <div class="avatar-container">
+      <div class="no-avatar">
+        {{name.substr(1,name.length-1)}}
+      </div>
+    </div>
+    <el-dropdown-menu slot="dropdown">
+      <el-dropdown-item>个人设置</el-dropdown-item>
+      <el-dropdown-item>系统设置</el-dropdown-item>
+      <el-dropdown-item>修改密码</el-dropdown-item>
+      <el-dropdown-item divided>安全登出</el-dropdown-item>
+    </el-dropdown-menu>
+  </el-dropdown>
+</div>

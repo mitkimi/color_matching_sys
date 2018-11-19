@@ -1,0 +1,32 @@
+<div id="home-page">
+  <el-row :gutter="20">
+    <el-col :span="18">
+      <el-card>
+        <div slot="header" class="clearfix">
+          <span>访客曲线（{{lastWeek.dayMon}} - {{lastWeek.daySun}}）</span>
+        </div>
+        <div style="width: 100%;height: 260px;">
+          <my-chart></my-chart>
+        </div>
+      </el-card>
+    </el-col>
+    <el-col :span="6">
+      <el-card>
+        <div slot="header" class="clearfix">
+          <span>时钟</span>
+          <el-button style="float: right; padding: 3px 0" type="text" @click="pageStatusData.clockSettingDialog = true">设置</el-button>
+        </div>
+        <div style="height: 260px;display: flex; flex-direction: column; justify-content: center;align-items: center">
+          <my-clock></my-clock>
+        </div>
+        <el-dialog title="时钟设置" :visible.sync="pageStatusData.clockSettingDialog">
+            <el-radio-group v-model="pageStatusData.clockSettingDialog" @change="setClock">
+              <el-radio-button label="clock">使用表盘</el-radio-button>
+              <el-radio-button label="num">使用数字时钟</el-radio-button>
+            </el-radio-group>
+        </el-dialog>
+      </el-card>
+
+    </el-col>
+  </el-row>
+</div>

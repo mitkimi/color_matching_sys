@@ -1,0 +1,16 @@
+<div id="present-page">
+  <el-card>
+    <div slot="header" class="clearfix">
+      <span>在场访客（{{pageData.visitors.length}}）</span>
+      <el-button style="float: right; padding: 3px 0;margin-left: 20px;" type="text">访客退场</el-button>
+      <el-button style="float: right; padding: 3px 0" type="text">手动入场</el-button>
+    </div>
+    <div class="visitors-container">
+      <el-row :gutter="20">
+        <el-col :span="6" class="visitor-container" v-for="item,index in pageData.visitors" :key="index">
+          <visitor-card :data="item" />
+        </el-col>
+      </el-row>
+    </div>
+  </el-card>
+</div>

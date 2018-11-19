@@ -1,0 +1,48 @@
+<div class="visitor">
+  <el-card class="el-card">
+    <div class="name">
+      {{componentData.name}}
+      <span class="male" v-if="componentData.gender === 1">男</span>
+      <span class="female" v-if="componentData.gender === 0">女</span>
+    </div>
+    <div class="phone">
+      <i class="el-icon-mobile-phone"></i>
+      {{componentData.phone}}
+    </div>
+    <div class="respondent" @click="dialogVisible = true">
+      被访： {{componentData.respondent.name}} <i class="el-icon-document"></i>
+    </div>
+    <div class="info">
+      入场时间：{{componentData.createTime | moment}}
+    </div>
+    <el-dialog
+      title="被访信息"
+      :visible.sync="dialogVisible"
+      width="30%">
+      <div class="dialog-respondent">
+        <div class="id">{{componentData.respondent.id}}</div>
+        <div class="qrcode">
+          <qrcode value="Hello, World!" :options="{ width: '100%' }"></qrcode>
+        </div>
+        <div class="user">
+            <div class="avatar" v-if="componentData.respondent.avatar !== ''">
+              <img :src="componentData.respondent.avatar" />
+            </div>
+            <div class="avatar-default" v-if="componentData.respondent.avatar === ''">
+              <img src="@/assets/user.png" />
+            </div>
+            <div class="name">{{componentData.respondent.name}}</div>
+        </div>
+        <div class="phone">
+          <i class="el-icon-mobile-phone"></i>
+          {{componentData.respondent.phone}}
+        </div>
+        <div class="job">岗位：{{componentData.respondent.job}}</div>
+        <div class="belong">部门：{{componentData.respondent.belong}}</div>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="dialogVisible = false">好</el-button>
+      </span>
+    </el-dialog>
+  </el-card>
+</div>
